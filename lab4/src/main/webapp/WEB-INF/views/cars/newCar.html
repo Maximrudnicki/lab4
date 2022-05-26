@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>New car</title>
+</head>
+<body>
+
+<form th:method="POST" th:action="@{/cars}" th:object="${car}">
+	<label for="model">Enter model: </label>
+    <input type="text" th:field="*{model}" id="model"/>
+    <br/>
+    <label for="color">Enter color: </label>
+    <input type="text" th:field="*{color}" id="color"/>
+    <br/>
+    <label for="worker_id">Enter worker's id: </label>
+    <input type="text" th:field="*{worker_id}" id="worker_id"/>
+    <br/>
+	<input type="submit" value="Add!"/>
+</form>
+
+</body>
+</html>
