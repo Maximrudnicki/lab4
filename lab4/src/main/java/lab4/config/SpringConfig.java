@@ -58,7 +58,7 @@ public class SpringConfig implements WebMvcConfigurer {
 		  
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/lab4");
-		dataSource.setUsername("root"); dataSource.setPassword("Haso4420");
+		dataSource.setUsername("root"); dataSource.setPassword("1111");
 		  
 		return dataSource; 
 		}
